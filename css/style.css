@@ -55,10 +55,44 @@ p {
     text-decoration: none;
     border: none;
     color: #222;
-    padding: 1rem 2rem;
-    background: red;
+    padding: 1rem 2rem;    
     display: inline-block;
     border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-green {
+    background: rgba(6, 54, 27, 0.9);
+    color: #f3f3f3;
+}
+.btn-green:hover {
+    background: rgba(20, 100, 55, 0.9);
+    
+}
+.btn-blue {
+    background: rgba(10, 22, 61, 0.9);
+    color: #f3f3f3;
+}
+.btn-blue:hover {
+    background: rgba(39, 66, 156, 0.9);
+    
+}
+.btn-red {
+    background: rgba(71, 5, 5, 0.9);
+    color: #f3f3f3;
+}
+.btn-red:hover {
+    background: rgba(139, 21, 21, 0.9);    
+}
+
+.btn-light {
+    background: rgb(216, 216, 216);
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+.btn-light:hover {
+    background: #f3f3f3;
+
 }
 
 
@@ -127,7 +161,7 @@ p {
 
     /* Parallax Scrolling */
     background-attachment: fixed;
-    background-position-y: -350px;
+    background-position-y: -150px;
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -191,6 +225,16 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 
+}
+
+#blog-two .articles-container .card:nth-child(2) p:nth-child(3) {
+    padding-bottom: 0;
+}
+
+#blog-two .articles-container .card:nth-child(2) a {
+    float: right;
+    margin-bottom: 2rem;
+    margin-top: 0.2rem;
 }
 
 /* Image-Break Section */
