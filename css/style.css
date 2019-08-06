@@ -1,5 +1,5 @@
 :root {
-    --primary-font: font-family: 'Lato', sans-serif;
+    --primary-font: 'Roboto Condensed', sans-serif;
     --max-width: 1400px;
     --color-dark: #333;
     --color-light: #777;
@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     
     
     
@@ -17,6 +18,7 @@
 html,
 body {
     font-family: var(--primary-font);
+    line-height: 1.2;
 }
 
 h1, h2, h3 {
@@ -95,6 +97,18 @@ p {
 
 }
 
+.paral {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.handwrite {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+}
+
 
 
 
@@ -163,10 +177,20 @@ p {
 
     /* Parallax Scrolling */
     background-attachment: fixed;
-    background-position-y: -150px;
+    background-position-y: -230px;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: Pulsate 6s linear infinite;
+
+
     }
+
+    @keyframes Pulsate {
+        from { opacity: 0.5; }
+        50% { opacity: 0.2; }
+        to { opacity: 0.5; }
+      }
+
 
 #showcase .showcase-container {
     display: flex;
@@ -274,7 +298,7 @@ p {
 #image-break .container-break {
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: 39vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -298,6 +322,11 @@ p {
     margin: auto;
 
 }
+
+#grid-bot .card {
+    margin-top: 1rem;
+}
+
 
 
 /* Big Blogpost */
@@ -334,3 +363,110 @@ p {
     
 }
 
+/* Contact Form */
+
+#contact input {
+    display: block;
+}
+
+#contact {
+    height: 50vh;
+    background: url(../img/10.jfif) center center/cover no-repeat;
+    background-attachment: fixed;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+#contact .contact-container {
+    display: flex;
+    height: 100%;
+    color: #fff;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    
+    flex-direction: column;
+
+}
+
+#contact .form-container {
+  display: flex;
+  
+
+}
+
+#contact .form-content-left {
+    flex: 1;
+ 
+    
+}
+#contact .form-content-left input {
+    width: 90%;
+    flex: 1;
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    
+}
+#contact .form-content-right textarea {
+    width: 90%;  
+    
+}
+
+#contact .form-content-right {
+    flex: 1;  
+    
+}
+
+
+#contact .form-content input {
+    padding: 0.5rem;
+}
+
+#contact .form-content-right {
+    text-align: left;    
+}
+
+/* Use It Free Section */
+
+#use-free {    
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#use-free div {
+    max-width: 800px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+/* footer */
+
+#footer-main {    
+    width: 100%;
+    background: #777;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    color: #f3f3f3;
+    font-size: 0.8rem;
+
+}
+
+
+#footer-main p {
+    margin: 0;
+    padding: 2rem;
+}
