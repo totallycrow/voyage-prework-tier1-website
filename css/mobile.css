@@ -1,0 +1,143 @@
+body {
+    font-size: 0.9rem;    
+}
+
+#navbar {
+    display: none;
+}
+
+
+#grid-bot .container .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#big-blogpost img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%; 
+  
+ }
+
+
+
+
+/* Small Screen/Mobile */
+
+@media(max-width: 790px) {
+
+    /* FIRST GRID */
+
+    #about .container .articles-container {
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.1rem;
+        
+    
+    }
+
+    .card {
+        margin-top: 2rem;
+    }
+
+    .card img {
+        height: 150px;
+        object-fit: cover;   
+    
+        
+    }
+
+
+    /* SECOND GRID */
+
+
+    #grid-bot .container .articles-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #grid-bot img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    #big-blogpost img {
+        object-fit: cover;
+        height: 250px;
+        width: 100%; 
+      
+     }
+
+     /* CONTACT */
+
+     #contact {
+         height: 80vh;
+
+
+     }
+
+     #contact .form-container {
+        flex-direction: column;
+        padding: 2rem;       
+      
+      }
+
+      #contact .form-content-left input {
+        width: 100%;
+        flex: 1;
+        padding: 0.6rem;
+        margin-bottom: 1.5rem;
+        border-radius: 5px;
+        border: none;
+        
+    }
+
+    #contact .form-content-right textarea {
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+@media(max-width: 620px){
+    #blog-two .container .articles-container {
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    
+    }
+
+    #big-blogpost  div {        
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+}
+@media(max-width: 470px) {
+
+
+    #blog-two .articles-container .card:nth-child(2) a {
+        float: none;        
+    }
+
+
+    
+}
+
+@media(max-width: 400px) {
+    #contact {
+        height: 95vh;
+
+
+    }
+
+    #image-break .container-break {
+        height: 50vh;
+    }
+
+}

@@ -39,6 +39,11 @@ p {
 .container {
     max-width: var(--max-width);
     margin: auto;
+    
+}
+
+.nrw {
+    padding: 0 4rem 0 4rem;    
 }
 
 .current {
@@ -229,7 +234,7 @@ p {
 
 .card div h3,
 .card div p {
-    text-align: justify;;
+    text-align: justify;
 }
 
 .card div a {
@@ -243,6 +248,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    
 
 }
 
@@ -370,10 +376,10 @@ p {
 }
 
 #contact {
-    height: 50vh;
+    height: 60vh;
     background: url(../img/10.jfif) center center/cover no-repeat;
     background-attachment: fixed;
-    background-position-y: 100px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 2rem;
