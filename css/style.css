@@ -581,6 +581,12 @@ nav-container .toggle-container {
     text-align: left;    
 }
 
+#contact h2 {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
 /* Use It Free Section */
 
 #use-free {    
