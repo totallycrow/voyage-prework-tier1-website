@@ -3,10 +3,30 @@ body {
 }
 
 
+
+#showcase:before,
+#image-break:before {
+
+
+    /* Parallax Scrolling */
+    background-attachment: scroll;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
 /* NAVBAR */
 
 
-nav-container {
+/* nav-container {
     height: 10vh;
     
 }
@@ -74,7 +94,10 @@ nav-container .toggle-container {
     height: 300px;
     width: 100%; 
   
- }
+ } */
+
+
+
 
 
 
