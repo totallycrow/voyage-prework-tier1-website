@@ -1,7 +1,7 @@
 # "Memories" template 
 
 ## Purpose
-This website is a pre-requisite project for Chingu's Voyage 11. The purpose of this task is to create a clone of "Conquer" theme (see it here: https://www.free-css.com/free-css-templates/page196/conquer).
+This website is a pre-requisite project for Chingu's Voyage 11. The purpose of this task is to create a clone of "Conquer" theme (see it here: https://www.free-css.com/free-css-templates/page196/conquer) using only vanilla JS and HTML and CSS (no external libraries allowed).
 
 ## Dependencies 
 This website is based on pure HTML/CSS/JS - no libraries or packages were used.
